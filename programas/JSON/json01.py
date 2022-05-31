@@ -5,8 +5,8 @@ import json
 json_fn = ".\data\marvel.json"   #   Ruta al archivo json con los datos.
 
 
-clave_gen = "Cinemateca Marvel"
-clave_pel = 'Iron Man'
+clave_gen = "Cinemateca Marvel"   #   Clave principal de búsqueda por cinemateca
+clave_pel = 'Iron Man'            #   Clave de búsqueda de película
 
 with open(json_fn) as marvel:
     
