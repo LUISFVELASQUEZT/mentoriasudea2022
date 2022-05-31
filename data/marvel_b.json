@@ -1,0 +1,207 @@
+{
+	"Cinemateca Marvel" : {
+		"Iron Man": {
+			"id" : 1,
+			"title" : "Iron Man",
+            "category_name" : "Action",
+			"release_year" : 2015,
+			"running_time" : 126,
+			"rating_name" : "PG-13",
+			"budget" : "140,000,000",
+			"gross" : "318,298,180"
+        },
+		"The Incredible Hulk": {
+			"id" : 2,
+			"title" : "The Incredible Hulk",
+			"category_name" : "Action",
+			"release_year" : 2008,
+			"running_time" : 112,
+			"rating_name" : "PG-13",
+			"budget" : "150,000,000",
+			"gross" : "134,518,390"
+		},
+		"Iron Man 2": {
+			"id" : 3,
+			"title" : "Iron Man 2",
+			"category_name" : "Action",
+			"release_year" : 2015,
+			"running_time" : 124,
+			"rating_name" : "PG-13",
+			"budget" : "200,000,000",
+			"gross" : "312,057,433"
+		},
+		"Thor": {
+			"id" : 4,
+			"title" : "Thor",
+			"category_name" : "Action",
+            "release_year" : 2011,
+			"running_time" : 115,
+			"rating_name" : "PG-13",
+			"budget" : "150,000,000",
+			"gross" : "181,015,141"
+		},
+		"Captain America: The First Avenger": {
+			"id" : 5,
+			"title" : "Captain America",
+			"category_name" : "Action",
+			"release_year" : 2011,
+			"running_time" : 124,
+			"rating_name" : "PG-13",
+			"release_date" : "July 22, 2011",
+			"budget" : "140,000,000",
+			"gross" : "176,636,816"
+		},
+		"Marvel's The Avengers": {
+			"id" : 6,
+			"title" : "Avengers, The",
+			"category_name" : "Science Fiction",
+			"release_year" : 2012,
+			"running_time" : 143,
+			"rating_name" : "PG-13",
+			"budget" : "220,000,000",
+			"gross" : "623,279,547"
+		},
+		"Iron Man 3": {
+			"id" : 7,
+			"title" : "Iron Man 3",
+			"category_name" : "Action",
+			"release_year" : 2015,
+			"running_time" : 130,
+			"rating_name" : "PG-13",
+			"budget" : "200,000,000",
+			"gross" : "408,992,272"
+		},
+		"Thor: The Dark World": {
+			"id" : 8,
+			"title" : "Thor: The Dark World",
+			"category_name" : "Science Fiction",
+			"release_year" : 2013,
+			"running_time" : 112,
+			"rating_name" : "PG-13",
+			"budget" : "170,000,000",
+			"gross" : "206,360,018"
+		},
+		"Captain America: The Winter Soldier": {
+			"id" : 9,
+			"title" : "Captain America: The Winter Soldier",
+			"category_name" : "Science Fiction",
+			"release_year" : 2014,
+			"running_time" : 121,
+            "rating_name" : "PG-13",
+			"budget" : "170,000,000",
+			"gross" : "259,746,958"
+		},
+		"Guardians of the Galaxy": {
+			"id" : 10,
+			"title" : "Guardians of the Galaxy",
+			"category_name" : "Science Fiction",
+			"release_year" : 2014,
+			"running_time" : 121,
+			"rating_name" : "PG-13",
+			"budget" : "170,000,000",
+			"gross" : "333,130,696"
+		}
+	},
+	"Cinemateca Marvel dos" : {
+		"Avengers: Age of Ultron": {
+			"id" : 11,
+			"title" : "Avengers: Age of Ultron",
+			"category_name" : "Science Fiction",
+			"release_year" : 2015,
+			"running_time" : 141,
+			"rating_name" : "PG-13",
+			"budget" : "250,000,000",
+			"gross" : "458,991,599"
+		},
+		"Ant-Man": {
+			"id" : 12,
+			"title" : "Ant-Man",
+			"category_name" : "Science Fiction",
+			"release_year" : 2015,
+			"running_time" : 132,
+			"rating_name" : "PG-13",
+			"budget" : "130,000,000",
+			"gross" : "179,017,481"			
+		},
+		"Captain America: Civil War": {
+			"id" : 13,
+			"title" : "Captain America: Civil War",
+			"category_name" : "Science Fiction",
+			"release_year" : 2016,
+			"running_time" : 147,
+			"rating_name" : "PG-13",
+			"budget" : "250,00,000",
+			"gross" : "408,084,349"
+		},
+		"Doctor Strange": {
+			"id" : 14,
+			"title" : "Doctor Strange",
+			"category_name" : "Science Fiction",
+			"release_year" : 2016,
+			"running_time" : 115,
+			"rating_name" : "PG-13",
+			"budget" : "165,000,000",
+			"gross" : "232,641,920"
+		},
+		"Guardians of the Galaxy Vol. 2": {
+			"id" : 15,
+			"title" : "Guardians of the Galaxy Vol. 2",
+			"category_name" : "Science Fiction",
+			"release_year" : 2017,
+			"running_time" : 136,
+			"rating_name" : "PG-13",
+			"budget" : "200,000,000",
+			"gross" : "389,213,281"
+        },
+		"Spider-Man: Homecoming": {
+			"id" : 16,
+			"title" : "Spider-Man: Homecoming",
+			"category_name" : "Science Fiction",
+			"release_year" : 2017,
+			"running_time" : 133,
+			"rating_name" : "PG-13",
+			"budget" : "175,000,000",
+			"gross" : "314,057,748"
+		},
+		"Thor: Ragnarok": {
+            "id" : 17,
+			"movie_title" : "Thor: Ragnarok",
+			"category_name" : "Science Fiction",
+			"release_year" : 2017,
+			"running_time" : 130,
+			"rating_name" : "PG-13",
+			"budget" : "180,000,000",
+			"gross" : "tbd"
+		},
+		"Black Panther": {
+			"id" : 18,
+			"title" : "Black Panther",
+			"category_name" : "Science Fiction",
+			"release_year" : 2018,
+			"running_time" : 0,
+			"rating_name" : "PG-13",
+			"budget" : "tbd",
+			"gross" : "tbd"
+		},
+		"Avengers: Infinity War": {
+			"movie_id" : 19,
+			"title" : "Avengers: Infinity War",
+			"category_name" : "Science Fiction",
+			"release_year" : 2018,
+			"running_time" : 0,
+			"rating_name" : "PG-13",
+			"budget" : "tbd",
+			"gross" : "tbd"
+		},
+		"Ant-Man and the Wasp": {
+			"id" : 20,
+			"title" : "Ant-Man and the Wasp",
+			"category_name" : "Science Fiction",
+			"release_year" : 2018,
+			"running_time" : 0,
+			"rating_name" : "PG-13",
+			"budget" : "tbd",
+			"gross" : "tbd"
+		}
+	}
+}

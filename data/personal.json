@@ -1,0 +1,26 @@
+{
+	"Empresa    Nro. 1" : {
+		"RRHH": {
+			"id" : 1,
+			"Nombre" : "Pedro",
+            "Apellido" : "Torres",
+			"Sueldo" : 3000000,
+			"Cargo" : "Gerente de Reclutamiento"
+        },
+		"Nomina": {
+			"id" : 2,
+			"Nombre" : "Martha",
+            "Apellido" : "Velez",
+			"Sueldo" : 3000000,
+			"Cargo" : "Gerente de RRHH"
+        },
+        "VENTAS": {
+			"id" : 3,
+			"Nombre" : "Tony",
+            "Apellido" : "Salazar",
+			"Sueldo" : 3500000,
+			"Cargo" : "Gerente Comercial"
+        }
+		
+	}
+}
