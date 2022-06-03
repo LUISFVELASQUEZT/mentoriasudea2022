@@ -3,7 +3,7 @@ import json
 clave_gen = 'Cinemateca Marvel'
 clave_pel = 'The Incredible Hulk'
 
-with open   (".\data\marvel_b.json") as marvel:
+with open   ("mentoriasudea2022\data\marvel_b.json") as marvel:
     
     data=json.load(marvel)
     

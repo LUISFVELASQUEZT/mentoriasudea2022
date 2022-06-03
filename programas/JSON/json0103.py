@@ -1,6 +1,6 @@
 import json
 
-json_fn = ".\data\personal.json"
+json_fn = "mentoriasudea2022\data\personal.json"
 clave_gen = ""
 clave_dep = ''
 

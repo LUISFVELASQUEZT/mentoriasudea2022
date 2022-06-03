@@ -2,8 +2,7 @@ import json
 
 #from matplotlib.font_manager import json_load
 
-json_fn = ".\data\marvel.json"   #   Ruta al archivo json con los datos.
-
+json_fn = "mentoriasudea2022\data\marvel.json"   #   Ruta al archivo json con los datos.
 
 clave_gen = "Cinemateca Marvel"   #   Clave principal de búsqueda por cinemateca
 clave_pel = 'Iron Man'            #   Clave de búsqueda de película
