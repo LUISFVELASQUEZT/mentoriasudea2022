@@ -45,4 +45,11 @@ Tiene dos grandes grupos de instrucciones:
         INSERT  : agrega datos 
         SELECT  : consulta datos
         UPDATE  : modifica datos
-        DELETE  : elimina dato    
+        DELETE  : elimina dato   
+
+Componentes de la base de datos relacional
+
+- Tabla:  es la unidad básica compuesta de hileras y columnas de datos.
+- Índice: son tablas de búsqueda que agilizan el acceso a los datos en una tabla.
+- Vista:  es una representación lógica datos de una o de varias tablas 
+ 
