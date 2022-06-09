@@ -1,7 +1,7 @@
 import csv
 
 csv_local_fn = "mentoriasudea2022\data\datos.csv"
-csv_copia = "mentoriasudea2022\data\.csv"
+csv_copia = "mentoriasudea2022\data\copia.csv"
 
 
 cabecera = []
