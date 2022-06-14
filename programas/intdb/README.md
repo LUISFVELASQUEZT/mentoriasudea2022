@@ -66,7 +66,19 @@ Del diagrama E-R pasamosg al modelo lógico en lenguaje DDL. Algunas herramienta
 
 Existen varias metodologías y herramientas que ayudan en este proceso.
 
+El diseño de las bases de datos es uno de los factores cruciales en la creación de páginas web dinámicas.
+
+
+Conocer las relaciones entre los datos y aplicar la normalización hasta la 3NF te ayudará grandemente durante el desarrollo del software.
+
+las reglas de Normalización están encaminadas a eliminar redundancias e
+inconsistencias de dependencia en el diseño de las tablas
+
+
+
 En el diseño de las bases de datos relacionales se toma en cuenta la normalización.
+
+
 
 https://en.wikipedia.org/wiki/Database_normalization#Initial_data
 
