@@ -27,7 +27,10 @@ def ejecutar_comando_sql(conexion, comando):
         conexion.commit()
     except Error as e:
         print(f"Ocurrió el error '{e}' al ejecutar el comando {comando}")
-        
+
+### Instrucciones tipo DDL (Data Definition Language)   
+#   Usa syntaxis propia de SQLITE3     
+
 
 crear_tabla_de_usuarios = """
 CREATE TABLE IF NOT EXISTS usuarios (
@@ -41,6 +44,10 @@ CREATE TABLE IF NOT EXISTS usuarios (
   depto_de_nacimiento TEXT
 );
 """
+
+### Instrucciones tipo DDL (Data Definition Language)   
+#   Usa syntaxis propia de SQLITE3  
+
 crear_tabla_de_publicaciones = """
 CREATE TABLE IF NOT EXISTS publicaciones(
   id INTEGER PRIMARY KEY AUTOINCREMENT, 
@@ -52,6 +59,9 @@ CREATE TABLE IF NOT EXISTS publicaciones(
   
 );
 """
+### Instrucciones tipo DDL (Data Definition Language)   
+#   Usa syntaxis propia de SQLITE3  
+
 crear_tabla_comentarios = """
 CREATE TABLE IF NOT EXISTS comentarios (
   id INTEGER PRIMARY KEY AUTOINCREMENT, 
@@ -63,6 +73,9 @@ CREATE TABLE IF NOT EXISTS comentarios (
 );
 """
 
+### Instrucciones tipo DDL (Data Definition Language)   
+#   Usa syntaxis propia de SQLITE3  
+
 crear_tabla_me_gusta = """
 CREATE TABLE IF NOT EXISTS me_gusta (
   id INTEGER PRIMARY KEY AUTOINCREMENT, 
@@ -71,6 +84,11 @@ CREATE TABLE IF NOT EXISTS me_gusta (
   FOREIGN KEY (id_usuario) REFERENCES usuarios (id) FOREIGN KEY (id_publicacion) REFERENCES publicaciones (id)
 );
 """
+
+### Instrucciones tipo DML (Data Manipulation Language)   
+#   Usa syntaxis propia de SQLITE3  
+
+
 agregar_usuarios = """
 INSERT INTO
   usuarios (nombres, apellidos, edad, genero, nacionalidad, ciudad_de_nacimiento, depto_de_nacimiento)
@@ -87,6 +105,10 @@ VALUES
   ('Sofia', 'Gonzalez', 21, 'femenino', 'Colombia','Barranquilla','Atlantico')
   ;
 """
+
+### Instrucciones tipo DML (Data Manipulation Language)   
+#   Usa syntaxis propia de SQLITE3  
+
 agregar_publicaciones = """
 INSERT INTO
   publicaciones (titulo, descripcion, fecha, id_usuario)
@@ -104,6 +126,8 @@ VALUES
   ("Grupo en FB", "O unamos con FB o IG ¿Qué les parece?", "2022-06-13",11),  
   ("Diversión", "Programemos un torneo de billar para el inicio del ciclo 2", "2022-06-13",13);
 """
+### Instrucciones tipo DML (Data Manipulation Language)   
+#   Usa syntaxis propia de SQLITE3  
 
 agregar_comentarios = """
 INSERT INTO
@@ -116,6 +140,8 @@ VALUES
   ('Te ayudo?', "2022-06-13", 2, 3),
   ('Eres lo máximo',"2022-06-13", 5, 4);
 """
+### Instrucciones tipo DML (Data Manipulation Language)   
+#   Usa syntaxis propia de SQLITE3  
 
 agregar_me_gusta = """
 INSERT INTO
@@ -129,9 +155,11 @@ VALUES
   (4, 2),
   (3, 6);
 """
-
+#### Se conecta a la base de datos. Si no existe, la crea vacía
 
 conexion=crear_conexion(nombreDB)
+
+###  Crea las estructuras vácías de cada una de las tablas
 
 ejecutar_comando_sql(conexion, crear_tabla_de_usuarios)
 
@@ -140,6 +168,8 @@ ejecutar_comando_sql(conexion, crear_tabla_de_publicaciones)
 ejecutar_comando_sql(conexion,crear_tabla_comentarios)
 
 ejecutar_comando_sql(conexion,crear_tabla_me_gusta)
+
+###   Agrega los datos a las tablas de la base de datos con el comando INSERT
 
 ejecutar_comando_sql(conexion, agregar_usuarios)
 
