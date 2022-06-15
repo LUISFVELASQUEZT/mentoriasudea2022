@@ -74,46 +74,13 @@ Conocer las relaciones entre los datos y aplicar la normalización hasta la 3NF 
 las reglas de Normalización están encaminadas a eliminar redundancias e
 inconsistencias de dependencia en el diseño de las tablas
 
-
-
 En el diseño de las bases de datos relacionales se toma en cuenta la normalización.
 
+La normalización es un proceso mediante el cual se estructura la base de datos relacional de acuerdo con una serie de formas llamadas formas normales para reducir la redundancia y mejorar la integridad de los datos.
 
+Esto fue propuesto inicialmente for Edgar F. Codd como parte del modelo relacional.
 
-https://en.wikipedia.org/wiki/Database_normalization#Initial_data
+Ver
 
-Database normalization is the process of structuring a relational database in accordance with a series of so-called normal forms in order to reduce data redundancy and improve data integrity. It was first proposed by Edgar F. Codd as part of his relational model.
+ https://lucid.app/lucidchart/2eb05a99-69d2-4051-9dd3-5452236896f4/view?page=0_0&invitationId=inv_ded23cb3-9533-4863-ad47-dfaab79264c3#
 
-Normalization entails organizing the columns (attributes) and tables (relations) of a database to ensure that their dependencies are properly enforced by database integrity constraints. It is accomplished by applying some formal rules either by a process of synthesis (creating a new database design) or decomposition (improving an existing database design).
-
-Satisfying 1NF
-To satisfy First normal form, each column of a table must have a single value. Columns which contain sets of values or nested records are not allowed.
-
-In the initial table, Subject contains a set of subject values, meaning it does not comply.
-
-To solve the problem, the subjects are extracted into a separate Subject table:[10]
-
-Satisfying 1NF
-To satisfy First normal form, each column of a table must have a single value. Columns which contain sets of values or nested records are not allowed.
-
-In the initial table, Subject contains a set of subject values, meaning it does not comply.
-
-To solve the problem, the subjects are extracted into a separate Subject table:[10]
-
-A foreign key column is added to the Subject-table, which refers to the primary key of the row from which the subject was extracted. The same information is therefore represented but without the use of non-simple domains.
-
-Instead of one table in unnormalized form, there are now two tables conforming to the 1NF.
-
-
-Satisfying 2NF
-If a table has a single column primary key, it automatically satisfies 2NF, but if a table has a multi-column or composite key then it may not satisfy 2NF.
-The Book table below has a composite key of {Title, Format} (indicated by the underlining), so it may not satisfy 2NF. At this point in our design the key is not finalised as the primary key, so it is called a candidate key. Consider the following table:
-
-All of the attributes that are not part of the candidate key depend on Title, but only Price also depends on Format. To conform to 2NF and remove duplicities, every non candidate-key attribute must depend on the whole candidate key, not just part of it.
-
-To normalize this table, make {Title} a (simple) candidate key (the primary key) so that every non candidate-key attribute depends on the whole candidate key, and remove Price into a separate table so that its dependency on Format can be preserved:
-
-Now, the Book table conforms to 2NF.
-
-Satisfying 3NF
-The Book table still has a transitive functional dependency ({Author Nationality} is dependent on {Author}, which is dependent on {Title}). A similar violation exists for genre ({Genre Name} is dependent on {Genre ID}, which is dependent on {Title}). Hence, the Book table is not in 3NF. To make it in 3NF, let's use the following table structure, thereby eliminating the transitive functional dependencies by placing {Author Nationality} and {Genre Name} in their own respective tables:
