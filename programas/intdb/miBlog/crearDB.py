@@ -81,7 +81,8 @@ CREATE TABLE IF NOT EXISTS me_gusta (
   id INTEGER PRIMARY KEY AUTOINCREMENT, 
   id_usuario INTEGER NOT NULL, 
   id_publicacion integer NOT NULL, 
-  FOREIGN KEY (id_usuario) REFERENCES usuarios (id) FOREIGN KEY (id_publicacion) REFERENCES publicaciones (id)
+  FOREIGN KEY (id_usuario) REFERENCES usuarios (id)
+  FOREIGN KEY (id_publicacion) REFERENCES publicaciones (id)
 );
 """
 
