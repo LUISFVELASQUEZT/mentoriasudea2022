@@ -1,0 +1,32 @@
+{                           
+    "alumnos": [           
+        {                   
+            "nombres": "Juan Carlos",
+            "apellidos": "Perez Ochoa",
+            "cedula": "12.123.456",
+            "telefono": "315-6088686",
+            "genero": "masculino",
+            "email": "jcarlos@gmail.com",
+            "ciudad": "Pasto"
+            
+        },
+        {
+            "nombres": "Luis Fernando",
+            "apellidos": "Ortiz Tobón",
+            "cedula": "12.123.777",
+            "telefono": "315-6789009",
+            "genero": "masculino",
+            "email": "jfortiz@gmail.com",
+            "ciudad": "Caldas"
+        },
+        {
+            "nombres": "Martha Lucia",
+            "apellidos": "Salazar Ortiz",
+            "cedula": "12.444.678",
+            "telefono": "315-9908989",
+            "genero": "femenino",
+            "email": "mlsalazar@gmail.com",
+            "ciudad": "Mitu"
+        }
+    ]
+}

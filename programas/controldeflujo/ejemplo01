@@ -1,0 +1,34 @@
+# Cálculo de Indice de Masa Muscular
+
+# Paso 1 : ingresar nombre, peso, estatura.
+# Paso 2 : calcular índice de masa muscular
+# Paso 3 : mostrar resultados
+
+personas = []
+
+personas.append([
+    "Luis",72.0,1,74
+])
+
+personas.append(
+    ["William", 76.0,1.78
+])
+
+for persona in personas:
+    nombre = persona[0]
+    peso = float(persona[1])
+    estatura = float(persona[2])
+
+    imc = 0.0  # imc = peso / (estatura)**2
+    try:
+        imc = peso / pow(estatura,2)
+        print(f'Hola {nombre} ud mide {estatura} mts y pesa {peso} kilos. Su IMC es {imc}')
+        if (imc > 26.0):
+            print(f'Estimado {nombre} le recomendamos consultar con un nutricionista!')
+        else:
+            print(f'Estimado su imc muestra valors normales')
+    except ZeroDivisionError:
+        print(" Los valores suministrados tienen errores ")
+
+for i in range(10,0,-1):
+    print(i)    

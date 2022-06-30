@@ -6,8 +6,8 @@
 
 import csv
 
-csv_copia  = "mentoriasudea2022\data\copia.csv"
-csv_local_fn = "mentoriasudea2022\data\datos.csv"
+csv_copia  = "../mentoriasudea2022/data/copia.csv"
+csv_local_fn = "../mentoriasudea2022/data/datos.csv"
 
 cabecera = []
 datos = []
@@ -44,10 +44,10 @@ def f_trazo(texto):
 
 texto="Paso 1: leyendo .csv e imprimiendo con selección"
 f_trazo(texto)      
-f_reader_csv(100)
+f_reader_csv(75)
 texto="Paso 2: copiando .csv"
 f_trazo(texto)
 f_copia()
 texto="Paso 3: imprimiendo la copia .csv"
 f_trazo(texto)
-f_print_copia()
+f_print_copia()                                                                                                                                                                                

@@ -1,2 +1,13 @@
-1010,Pedro,Páramo,87,66
-2020,Antonio,Salazar,77,56
+Cedula,Nombres,Apellidos,Sexo,Edad,Peso,Estatura,Sueldo,FechaIngreso
+1,Pedro,Perez,M,18,80,1.78,20500,01/01/20
+111,Luis,Salazar,M,23,76,1.82,21000,27/02/19
+221,Sofia,Torrealba,F,19,54,1.74,19500,16/08/21
+1010,Pedro,Torrealba,M,24,79,1.87,24500,01/01/20
+1020,Luis,Perez,M,27,75,1.65,22000,27/02/19
+1030,Sofia,Salazar,F,22,55,1.67,20500,16/08/21
+2110,Pedro,Gomez,M,17,79,1.73,20500,01/01/20
+2120,Luis,Velez,M,24,77,1.75,21000,27/02/19
+2130,Sofia,Torrealba,F,18,53,1.69,19500,16/08/21
+2140,Pedro,Gonzalez,M,25,89,1.71,24500,01/01/20
+2150,Juan,Perez,M,26,76,1.78,22000,27/02/19
+2160,Francis,Salazar,F,23,54,1.81,20500,16/08/21

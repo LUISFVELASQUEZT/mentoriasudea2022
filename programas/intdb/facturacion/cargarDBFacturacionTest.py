@@ -12,7 +12,7 @@ csv_fn = "../mentoriasudea2022/data/prueba3NF.csv"
 nombreDB="testfac.db"
 
 #### Se conecta a la base de datos. Si la bd no existe, la crea vacía
-fila= []
+
 
 def crear_conexion(nombreDB):
     conexion = None
@@ -55,7 +55,7 @@ def f_ejecutar_consulta_a_tabla (conexion, comando):
         print(f" Ocurrio el error '{e}' al ejecutar el comando '{comando}'")         
     
 
-def f_cargar_clientes():
+def f_cargar_clientes(fila):
     nit=fila['NIT']
     cliente=fila['Cliente']
     comando="""select * from clientes where nit = ?"""
@@ -65,7 +65,7 @@ def f_cargar_clientes():
        comando="""insert into clientes (nit, nombres) values (?,?)"""
        ejecutar_comando_sql(conexion, comando, (nit,cliente))
     
-def f_cargar_productos():
+def f_cargar_productos(fila):
     codProducto = fila['CodigoProducto']
     codCorto = codProducto[len(codProducto)-7:]
     descProducto = fila['DescProducto']
@@ -76,7 +76,7 @@ def f_cargar_productos():
        comando="""insert into productos (id_producto, descripcion) values (?,?)"""
        ejecutar_comando_sql(conexion, comando, (codCorto,descProducto))
     
-def f_cargar_facturas():
+def f_cargar_facturas(fila):
     nit=fila['NIT']
     tipoDocto = fila['TipoDocto']
     documento = fila ['Documento']
@@ -88,7 +88,7 @@ def f_cargar_facturas():
        print(f'{documento} nuevo')
        comando="""insert into facturas (id_documento, descripcion, fecha, valor, nit) values (?,?,?,?,?)"""
        ejecutar_comando_sql(conexion, comando, (documento,descripcion, fecha, 0.0, nit))
-def f_cargar_ventas():
+def f_cargar_ventas(fila):
     """
         id_documento CHAR(12) NOT NULL,
         id_producto CHAR(12) NOT NULL,
@@ -136,10 +136,10 @@ with open (csv_fn,'r') as fn:  #  Se define contexto para el proceso siguiente
         precioUnitario = int(fila['Precio Unitario'])
         totalDetalle = int(fila['Total Detalle'])
         costoUnitario = int(fila['Costo Vigente'])
-        f_cargar_clientes()
-        f_cargar_productos()
-        f_cargar_facturas()
-        f_cargar_ventas()
+        f_cargar_clientes(fila)
+        f_cargar_productos(fila)
+        f_cargar_facturas(fila)
+        f_cargar_ventas(fila)
     
     comandos = []    
     comandos.append("""select * from clientes order by nombres""")
