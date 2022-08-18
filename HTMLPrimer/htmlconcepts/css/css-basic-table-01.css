@@ -1,0 +1,19 @@
+div{
+    border: solid 3px black;
+}
+
+table {
+    border: 1px solid blue collapse;
+}
+td{
+    border: 1px solid black;
+}
+td, th{
+    border: 1px solid blue;
+    padding: 5px;
+}
+.foo{
+    color:blue;
+    text-align: center;
+    width: 200px;
+}

@@ -1,0 +1,49 @@
+/*3.4  text align center in li a*/
+/*3.4  to ul to add border arount the nav bar */
+/*3.4  to all li add border-bottom to all li, except the last*/
+/*3.4  fixed full-height side nav bar */
+
+
+ul{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    background-color: #f1f1f1;
+    border: 1px solid #555;
+    width: 25%; /* before 200px; */
+    position : fixed  /*3.4  fixed */
+}
+
+li a {
+    display: block;
+    width: 60px;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+    text-align: center;
+    
+}
+li {
+    text-align: center;
+    border-bottom: 1px solid #555;
+}
+li:last-child {
+    border-bottom: none;
+}
+li a:hover{
+    background-color: #555;
+    color: white;
+}
+
+li a:active{
+    background-color: #4caf50;
+    color: white;
+}
+
+li a:hover :not(.active)
+    {
+    background-color: #555;
+    color: rgb(21, 219, 21);
+}
+
+

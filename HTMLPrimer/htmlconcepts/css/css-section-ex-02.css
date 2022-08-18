@@ -1,0 +1,39 @@
+header, footer, aside, section {
+    background-color: green;
+    color: white;
+    padding: 24 px 14 px;
+    margin: 10px;
+    border-radius: : 10px;
+    box-shadow: 2px 2px 5px 2px gray;
+    font: 14px/24px "Lucida console";
+}
+
+footer, header{
+    text-align: center;
+    clear: both;
+}
+
+section{
+    float: left;
+    width: 60%;
+    
+    
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+aside{
+    float: right;
+    width: 25%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#mifoto{
+    float: right;
+    margin-left: 10px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+}

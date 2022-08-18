@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Forms input fields 01</title>
+    </head>
+    <body>Choose color:
+        <input type="color" value="#ff00ff">
+        <form>
+            <fieldset>
+                <legend>Customize your experience:</legend>
+                Elija el color de fondo
+                <input type="color" id="colorElegido" /> <br>
+                <script>
+                    var colorInputField=document.querySelector("#colorElegido");
+                    colorInputField.addEventListener('input',function(evt){
+                        document.body.style.backgroundColor=this.value;
+                    },false);
+                </script>
+            </fieldset>
+            <fieldset>
+                <legend>Personal data</legend>
+                <label for="lastName">Last Name</label>
+                <input type="text" name="lastName" placeholder="Last Name" id="lastName"> <br>
+                <label for="firstName">First Name</label>
+                <input type="text" name="firstName" placeholder="First Name" id="firstName"> <br>
+                <label for="email">         Email</label>
+                <input type="email" name="email"    placeholder="Email" id="email"> <br>
+                <label for="phone">         Phone</label>
+                <input type="tel" name="phone"    placeholder="Phone" id="phone"> <br>
+                <label for="webSite">Web Site</label>
+                <input type="url" name="webSite"    placeholder="webSite" id="website"> <br>
+                <label for="searchText">Search Text</label>
+                <input type="search" name="searchText"    placeholder="searchText" id="searchText"> <br>
+                <label for="age">Age</label>
+                <input type="number" name="age"    placeholder="Age" id="age" min="18" max="75"> <br>
+                <label for="ageRange">Range</label>
+                <input type="range" name="ageRange"    placeholder="Age Range" id="ageRange" min="18" max="75"> <br>
+                <label for="birthDate">Birth Date</label>
+                <input type="date" name="birthDate"    placeholder="Birth Date" id="birthDate"> <br>
+            </fieldset>
+        </form>
+    </body>
+
+</html>

@@ -1,0 +1,18 @@
+h1 ,h2, body,div{
+    color:#3308f0;
+    text-align: center;   
+    
+}
+div{
+    background-color: rgb(237, 20, 237);
+    width: 100px;
+    text-align: center; 
+    height: 400px;
+    padding: 20px;
+    margin: 20px;
+    font-family: Arial, "Sans Serif";
+    font-size: 28px;
+    font-weight: bold;
+    border: solid 2px black;
+
+}

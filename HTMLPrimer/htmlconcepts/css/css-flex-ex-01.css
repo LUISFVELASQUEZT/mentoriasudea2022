@@ -1,0 +1,8 @@
+.preferencias{
+    display: flex;
+    color: blue;
+    justify-content: space-between;
+    width: 20%;
+    margin: .1rem;
+    border: 1px solid magenta;
+}

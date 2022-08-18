@@ -1,0 +1,72 @@
+html {
+    overflow: hidden;
+    height: 100%;
+    background: #c72
+}
+body{
+    overflow:auto;
+    height:100%;
+    width:600px;
+    margin: 0 auto;
+    padding: 0 20px;
+    border: 1px solid black;
+    border-width: 0 1px;
+    background: #eee;
+}
+h1{
+    color: blue;
+    display: inline-block margin 0 auto;
+    text-align: center;
+}
+h2{
+    color: rgb(80, 236, 80);
+    display: inline-block margin 0 auto;
+    text-align: center;
+}
+table, th, td {
+    border: 2px solid black;
+    border-radius: 10px;
+    border-color: #0a0a0a;
+    
+}
+img{
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: auto;
+    margin: 10px;
+    
+}
+p {
+    color: blue; 
+    text-align: center;
+    border: solid 1px black;
+    font-weight: bold;
+}
+
+figcaption{
+    color: blue; 
+    text-align: center;
+    font-weight: bold;
+}
+
+.centered{
+    margin-left: auto;
+    margin-right: auto;
+}
+#tablesArtists{
+    color: blue;
+    box-sizing: content-box;
+    border: 3px solid;
+    padding-bottom: 20px;
+    width:400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#photos{
+    display: table-cell;
+    border: 3px solid;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;   
+}
+  

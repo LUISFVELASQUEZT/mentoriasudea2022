@@ -1,0 +1,24 @@
+html {
+    overflow:hidden;
+    height: 100%;
+    background: #c72;
+}
+body {
+    
+    
+    width:600px;
+    margin: 0 auto;
+    padding: 0 20px;
+    border: 1px solid black;
+    border-width: 0 1px;
+    background: #eee;
+    overflow:auto;
+    height: 100%;
+}
+
+/* body {
+    width:600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid black;
+}*/

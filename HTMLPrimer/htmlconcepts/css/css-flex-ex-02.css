@@ -1,0 +1,12 @@
+  *{
+    color: blue;
+  }
+  
+  div{
+    color: magenta;
+  }
+
+  .box{
+    display: flex;
+    border: 1px solid red;
+  }

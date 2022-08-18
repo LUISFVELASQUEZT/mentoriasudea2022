@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BFC Example 02
+
+        </title>
+        <link rel="stylesheet" href="bfc02style.css">
+    </head>
+    <body>
+        <nav> 
+            <h1>Welcome to BFC Example 02</h1>
+        </nav>
+        <h2>Containing floats</h2>
+
+<div class="ex1">
+  <div class="ex1-float">I am a floated element.</div>
+  I am the outer text inside a box.
+  I am the outer text inside a box.
+  I am the outer text inside a box.
+  I am the outer text inside a box.
+  I am the outer text inside a box.
+  I am the outer text inside a box.
+  I am the outer text inside a box.
+  
+</div>
+
+
+<h2>Prevent margin collapsing</h2>
+
+<div class="ex2">
+  <p>I am paragraph one and I have a margin top and bottom of 20px;</p>
+  <p>I am paragraph two and I have a margin top and bottom of 20px;</p>
+</div>
+
+<h2>Prevent float wrapping</h2>
+
+<div class="ex3">
+  <div class="ex3-float">I am a floated element.</div>
+  <div class="ex3-text">
+  I am text inside a <b>div nested inside the outer box</b>. 
+  I have <b>overflow auto </b> which makes me a BFC and 
+  <b>therefore I do not wrap.</b>
+  </div>
+</div>
+      
+        <footer>&copy by Luis F - 2022 </footer> <hr> 
+          <details> 
+            <summary>Contact info </summary>
+             <address>My address: Calle 78 51 AA 72 El Bosque</address>
+             <phone>My phone: 584448021</phone> <br>
+             <email>My email: luis@gmail.com </email>
+            
+          </details>
+          <p><b> Details and summary are welcome!</b></p>
+             
+        
+
+    </body>
+
+</html>

@@ -1,0 +1,3 @@
+CREATE TABLE IF NOT EXISTS clientes (
+  rut CHAR(12) NOT NULL PRIMARY KEY,
+  nombres TEXT NOT NULL);

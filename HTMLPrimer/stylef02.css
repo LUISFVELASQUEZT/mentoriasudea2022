@@ -1,0 +1,26 @@
+html {
+    padding: 50;
+    margin: 50;
+    
+    
+}
+
+body {
+    padding: 50;
+    margin: 50;
+    border: 4px dashed  #ef85df;
+    
+}
+
+div{
+    padding: 10;
+    margin: 10;
+    border: 2px 2px 2px 0 solid ;
+    background: #9c85ef;
+}
+p {
+    border: 3px dashed;
+    font-size: medium;
+    font-style: italic ;
+    color: #3409d0;
+}

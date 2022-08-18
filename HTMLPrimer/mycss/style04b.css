@@ -1,0 +1,78 @@
+/*4b  Basic horizontal nav bar with background color and change*/
+/*4bthe background color when the user moves the mouse over them */
+
+ul {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    overflow: hidden;
+    background-color: rgba(143, 255, 51, 0.2);
+    border: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
+    width: 100%;
+    position: fixed;
+    top:0;
+    text-align:center
+}
+
+li a {
+    display: block; 
+    color: #666;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-align: center;    
+}
+li {
+    display: inline;
+    text-align: center;
+    border-bottom: 1px solid #555;
+    font-weight: bold;
+}
+li:last-child {
+    border-bottom: none;
+}
+li a:hover{
+    background-color: #111;
+    color: white;
+}
+
+li a:active{
+    background-color: #4caf50;
+    color: white;
+}
+
+li a:hover :not(.active)
+    {
+    background-color: #555;
+    color: rgb(21, 219, 21);
+}
+div {
+    margin-left:10%;
+    padding: 1px 16px;
+    height:1000px;
+}
+
+/*  p4   */
+
+li { 
+    display: inline;
+    float: right;
+}
+li{
+    border-right:1px; solid; color: #bbb;
+}
+li : last-child {
+    border-right:none;
+}
+ul
+    {
+       list-style-type: none;
+       margin:0;
+       padding:0;
+       overflow:hidden;
+    }
+li a {
+    display: block;
+    padding: 8px;
+    background-color: #dddddd;
+}

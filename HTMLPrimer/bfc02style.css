@@ -1,0 +1,109 @@
+body {
+    margin: 40px;
+    background-color: #fff;
+    color: #444;
+    font: 1.4em Arial, sans-serif;
+    }
+
+title, h1{
+    color: magenta;
+}
+
+h2 {
+    color: blue;
+}
+
+footer, details {
+    color: blue;
+}
+
+div {
+    color: blue;
+}
+
+    /** example 1*/
+
+.ex1 {
+    border: 5px dotted rgb(214,129,137);
+    border-radius: 5px;
+    width: 450px;
+    padding: 10px;
+    margin-bottom: 40px;
+    display: flow-root;
+}
+.ex1-float {
+    padding: 10px;
+    border: 5px solid rgba(214,129,137,.4);
+    border-radius: 5px;
+    background-color: rgba(78, 197, 233, 0.4);
+    color: #fff;
+    color: red;
+    float: left;  
+    width: 200px;
+    margin: 0 20px 0 0;
+}
+    
+/* example 2*/
+.ex2 {
+    background-color: #ccc;
+    margin: 0 0 40px 0;
+    display: flow-root;
+    }
+
+    .ex2 p {
+    padding: 0;
+    margin: 20px 0 20px 0;
+    background-color: rgb(125, 78, 233);
+    color: #fff;
+    }
+
+/* example 3 */
+
+.ex3 {
+    border: 5px dotted rgb(214,129,137);
+    border-radius: 5px;
+    width: 450px;
+    padding: 10px;
+    margin-bottom: 40px;
+    
+  }
+  
+  .ex3-float {
+    padding: 10px;
+    border: 5px solid rgba(214,129,137,.4);
+    border-radius: 5px;
+    background-color: rgba(34, 70, 39, 0.4);
+    color: #fff;
+    float: left;  
+    width: 150px;
+    margin: 0 20px 0 0;
+  }
+  
+  .ex3-text {
+    display: flow-root;
+  }
+
+
+.outer {
+    border: 5px dotted rgb(214, 180, 129);
+    border-radius: 5px;
+    width: 450px;
+    padding: 10px;
+    margin-bottom: 40px;
+  }
+
+  .float {
+    padding: 10px;
+    border: 5px solid rgba(214,129,137,.4);
+    border-radius: 5px;
+    background-color: rgba(233,78,119,.4);
+    color: #fff;
+    float: left;
+    width: 200px;
+    margin: 0 20px 0 0;
+  }
+
+
+  p {
+    color: blue;
+  }
