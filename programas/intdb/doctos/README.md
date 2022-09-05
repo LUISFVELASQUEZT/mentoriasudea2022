@@ -441,7 +441,33 @@ SELECT  nombre, apellido, correo, fecha_de_nacimiento, EXTRACT (YEAR FROM AGE(fe
 
 SELECT  nombre, apellido, fecha_de_nacimiento, AGE(fecha_de_nacimiento)  FROM persona;
 
+VISTAS - VIEWS
+
+CREATE VIEW vista AS
+	SELECT dato1, dato2, dato3, dato5, dato6, dato7
+	FROM tabla1, tabla2
+	WHERE tabla1.dato = tabla2.dato;
+
+Uso:
+
+SELECT * FROM vista;
+
+EJEMPLOS DE PUNTOS DE RECUPERACIÓN - COMMIT - ROLLBACK
+
+BEGIN;
+UPDATE cuenta_ahorros SET balance = balance - 100.00
+WHERE nombre = 'Luis';
+SAVEPOINT punto1;
+UPDATE cuenta_ahorros SET balance = balance + 100.00
+WHERE nombre = 'Juan';
+-- error... se empleó una cuenta que  no era
+ROLLBACK TO punto1;
+UPDATE cuenta_ahorros SET balance = balance + 100.00
+WHERE nombre = 'Pedro';
+COMMIT;
 
 
 La ciudad debe ser una de las siguientes: Medellin, Envigado,Bogota, Sincelejo, Cali, Barranquilla. La lista podría ser mayor, solo se colocan estas para probar.
+
+NOTAS TOMADAS DEL MANUAL DE POSTGRES 14.5
 
