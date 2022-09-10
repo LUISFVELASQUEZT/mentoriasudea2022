@@ -5,7 +5,7 @@ CREATE TABLE "personas" (
   "direccion" text,
   "telefono" text,
   "ciudad" text,
-  "email" text,
+  "email" text, --
   "fecha_re" date,
   PRIMARY KEY ("cedula")
 );
