@@ -1,5 +1,5 @@
 CREATE TABLE "personas" (
-  "cedula" char(15),
+  "cedula" char(15), -- 
   "nombres" text,
   "apellidos" text,
   "direccion" text,
@@ -9,6 +9,7 @@ CREATE TABLE "personas" (
   "fecha_re" date,
   PRIMARY KEY ("cedula")
 );
+
 
 CREATE TABLE "prestamos" (
   "cedula" char(15),
